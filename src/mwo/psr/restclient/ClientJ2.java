@@ -38,7 +38,11 @@ public class ClientJ2 {
 //		java.io.BufferedReader in = new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
 		
 		do {
+			try {
 			client.getDepartures();
+			} catch (Exception e) {
+				 System.out.println("Spróbuj jeszcze raz");
+			}
 		} while (true);
 		
 //		do {
