@@ -162,7 +162,7 @@ public class Actual {
 
 	@Override
 	public String toString() {
-		return (this.getDirection() + " - " + this.getActualTime());
+		return ("Linia " + this.getPatternText() + ": " + this.getDirection() + " - " + this.getActualTime());
 	}
 
 }
